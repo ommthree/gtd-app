@@ -1,0 +1,28 @@
+# Ignore Visual Studio out-of-source build directory
+/out/
+
+# CMake generated files
+/CMakeFiles/
+/CMakeCache.txt
+Makefile
+cmake_install.cmake
+
+# Visual Studio files
+*.sln
+*.vcxproj*
+*.user
+*.obj
+*.pdb
+*.idb
+*.tlog
+*.log
+*.ipch
+*.aps
+*.ncb
+*.opensdf
+*.sdf
+*.VC.db
+
+# Ignore database and config output if needed
+*.db
+config/*.json

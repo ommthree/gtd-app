@@ -106,7 +106,7 @@ void render_main_window(const std::vector<Task>& tasks) {
     ImGui::End();
 }
 
-void launch_gui(const std::vector<Task>& tasks) {
+void launch_gui(std::vector<Task>& tasks) {
     g_tasks = tasks;
 
     WNDCLASSEX wc = { sizeof(WNDCLASSEX), CS_CLASSDC, WndProc, 0L, 0L,

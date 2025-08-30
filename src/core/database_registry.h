@@ -36,4 +36,7 @@ bool loadDatabaseConfigs(const std::string& configPath);
 // Load table-to-database mappings from a JSON file
 bool loadTableMappings(const std::string& mappingPath);
 
+// Human-readable names of databases, e.g., ["Shared DB", "Work DB"]
+extern std::vector<std::string> databaseNames;
+
 #endif // DATABASE_REGISTRY_H

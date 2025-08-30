@@ -1,20 +1,17 @@
-#ifndef CARD_VIEW_GLOBALS_H
-#define CARD_VIEW_GLOBALS_H
-
 #pragma once
 
-#include <map>
 #include <string>
-#include <mysql.h>  //Important: this ensures MYSQL is known here
+#include <map>
+#include <mysql.h>
+#include <sqlite3.h>
 
-// Declare shared lookup tables
-extern std::map<int, std::string> categoryNames;
-extern std::map<int, std::string> contextNames;
-extern std::map<std::string, std::string> projectTitlesMap;
-extern std::map<int, std::string> topicNames;
-extern std::map<int, std::string> personNames;
+// === Global lookup maps ===
+// All map from ID to name, except projectLookup which maps from UUID string to name
+extern std::map<int, std::string> categoryLookup;
+extern std::map<int, std::string> contextLookup;
+extern std::map<int, std::string> topicLookup;
+extern std::map<int, std::string> personLookup;
+extern std::map<std::string, std::string> projectLookup;
 
-//Fix declaration: match the definition
-void populateLookupMaps(MYSQL* mysql_conn);
-
-#endif // CARD_VIEW_GLOBALS_H
+// === Populates all lookup maps from MySQL and SQLite based on table mapping ===
+void populateLookupMaps();

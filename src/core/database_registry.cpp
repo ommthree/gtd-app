@@ -8,10 +8,12 @@ using json = nlohmann::json;
 // Global list of all database connections
 std::vector<DatabaseConnection> allDatabases;
 
-// Updated: mapping from table name → vector of DB IDs (to allow multiple DBs per table)
+// Mapping from table name → vector of DB IDs (to allow multiple DBs per table)
 std::map<std::string, std::vector<int>> tableToDatabaseIds;
 
-// === Load database_config.json ===
+// Global list of database names (for UI dropdown etc.)
+std::vector<std::string> databaseNames;
+
 bool loadDatabaseConfigs(const std::string& configPath) {
     std::ifstream file(configPath);
     if (!file.is_open()) {
@@ -31,6 +33,7 @@ bool loadDatabaseConfigs(const std::string& configPath) {
     for (const auto& db : dbConfig) {
         DatabaseConnection conn;
         std::string type = db.value("type", "");
+
         if (type == "mysql") {
             MYSQL* mysql = mysql_init(nullptr);
             if (!mysql) {
@@ -55,6 +58,8 @@ bool loadDatabaseConfigs(const std::string& configPath) {
             conn.connection = mysql;
             allDatabases.push_back(conn);
 
+            std::string label = db.value("label", "MySQL at " + host);
+            databaseNames.push_back(label);
         }
         else if (type == "sqlite") {
             sqlite3* sqlite = nullptr;
@@ -69,12 +74,15 @@ bool loadDatabaseConfigs(const std::string& configPath) {
             conn.connection = sqlite;
             allDatabases.push_back(conn);
 
+            std::string label = db.value("label", "SQLite: " + path);
+            databaseNames.push_back(label);
         }
         else {
             std::cerr << " Unknown database type: " << type << "\n";
         }
     }
 
+    std::cout << "[DEBUG] Loaded " << databaseNames.size() << " database names.\n";
     return true;
 }
 

@@ -1,7 +1,7 @@
 ﻿#include "core/database.h"
 #include "core/config.h"
 #include "platform/windows/gui_win32.h"
-#include "ui/lookup_maps.h"
+#include "core/lookup_maps.h"  // moved from ui/
 #include "core/database_registry.h"
 
 #include <mysql.h>
@@ -30,27 +30,10 @@ int main() {
 
         std::cout << "[OK] Database configs and table mappings loaded.\n";
 
-        // === Identify shared MySQL DB for lookups ===
-        std::cout << "Determining shared MySQL DB for lookups...\n";
-        int sharedDbId = -1;
-        if (tableToDatabaseIds.count("Projects") && !tableToDatabaseIds["Projects"].empty()) {
-            sharedDbId = tableToDatabaseIds["Projects"][0];
-        }
-
-        if (sharedDbId >= 0 && sharedDbId < allDatabases.size()) {
-            if (allDatabases[sharedDbId].type == DatabaseType::MYSQL) {
-                MYSQL* conn = std::get<MYSQL*>(allDatabases[sharedDbId].connection);
-                std::cout << "Calling populateLookupMaps(conn)...\n";
-                populateLookupMaps(conn);
-                std::cout << "[OK] Lookup tables populated.\n";
-            }
-            else {
-                std::cerr << "Expected MySQL for lookup tables but got SQLite.\n";
-            }
-        }
-        else {
-            std::cerr << "Could not determine shared DB ID for lookups.\n";
-        }
+        // === Populate lookup maps (automatically selects correct DB) ===
+        std::cout << "Calling populateLookupMaps()...\n";
+        populateLookupMaps();
+        std::cout << "[OK] Lookup tables populated.\n";
 
         // === Load tasks from all databases ===
         std::cout << "Fetching tasks from all databases...\n";

@@ -6,16 +6,21 @@
 #include "task.h"  
 #include <map>
 #include "core/lookup_maps.h"
-#include "core/database_registry.h" // for databaseNames
-#include "core/database.h" // for saveTaskToDatabase, moveTaskToDatabase
+#include "core/database_registry.h"
+#include "core/database.h"
 
 CardView::CardView(Task& task)
     : task_(task)
 {
 }
 
-void CardView::draw() {
-    ImGui::BeginChild(task_.uuid.c_str(), ImVec2(300, 200), true, ImGuiWindowFlags_NoMove | ImGuiWindowFlags_NoScrollbar);
+void CardView::draw(float zoom) {
+    const float baseWidth = 300.0f;
+    const float baseHeight = 200.0f;
+    const float width = baseWidth * zoom;
+    const float height = baseHeight * zoom;
+
+    ImGui::BeginChild(task_.uuid.c_str(), ImVec2(width, height), true, ImGuiWindowFlags_NoMove | ImGuiWindowFlags_NoScrollbar);
 
     if (ImGui::Button("Flip")) {
         is_flipped_ = !is_flipped_;
@@ -24,17 +29,18 @@ void CardView::draw() {
     ImGui::Separator();
 
     if (is_flipped_) {
-        drawBack();
+        drawBack(zoom);
     }
     else {
-        drawFront();
+        drawFront(zoom);
     }
 
     ImGui::EndChild();
 }
 
-void CardView::drawFront() {
+void CardView::drawFront(float zoom) {
     ImGui::TextWrapped("%s", task_.title.c_str());
+
     if (task_.in_focus) {
         ImGui::TextColored(ImVec4(1.0f, 0.8f, 0.0f, 1.0f), "FOCUS");
     }
@@ -43,9 +49,10 @@ void CardView::drawFront() {
     }
 }
 
-void CardView::drawBack() {
+void CardView::drawBack(float zoom) {
     static char buffer[1024];
     strncpy(buffer, task_.notes.c_str(), sizeof(buffer));
+    buffer[sizeof(buffer) - 1] = '\0';
 
     bool changed = false;
     bool dbChanged = false;
@@ -57,165 +64,130 @@ void CardView::drawBack() {
         changed = true;
     }
 
-    if (ImGui::Checkbox("Done", &task_.is_done)) {
-        changed = true;
-    }
-
-    if (ImGui::Checkbox("In Focus", &task_.in_focus)) {
-        changed = true;
-    }
+    if (ImGui::Checkbox("Done", &task_.is_done)) changed = true;
+    if (ImGui::Checkbox("In Focus", &task_.in_focus)) changed = true;
 
     // === Category dropdown ===
     {
-        std::vector<int> categoryIds;
-        std::vector<std::string> categoryLabels;
+        std::vector<int> ids;
+        std::vector<std::string> labels;
         for (const auto& [id, label] : categoryLookup) {
-            categoryIds.push_back(id);
-            categoryLabels.push_back(label);
+            ids.push_back(id);
+            labels.push_back(label);
         }
 
         int selectedIndex = 0;
         if (task_.category_id) {
-            auto it = std::find(categoryIds.begin(), categoryIds.end(), *task_.category_id);
-            if (it != categoryIds.end()) {
-                selectedIndex = static_cast<int>(it - categoryIds.begin());
-            }
+            auto it = std::find(ids.begin(), ids.end(), *task_.category_id);
+            if (it != ids.end()) selectedIndex = static_cast<int>(it - ids.begin());
         }
 
         if (ImGui::Combo("Category", &selectedIndex,
             [](void* data, int idx, const char** out_text) {
-                auto& labels = *static_cast<std::vector<std::string>*>(data);
-                if (idx >= 0 && idx < static_cast<int>(labels.size())) {
-                    *out_text = labels[idx].c_str();
-                    return true;
-                }
-                return false;
-            }, static_cast<void*>(&categoryLabels), static_cast<int>(categoryLabels.size()))) {
-            task_.category_id = categoryIds[selectedIndex];
+                auto& v = *static_cast<std::vector<std::string>*>(data);
+                *out_text = v[idx].c_str(); return true;
+            }, static_cast<void*>(&labels), static_cast<int>(labels.size()))) {
+            task_.category_id = ids[selectedIndex];
             changed = true;
         }
     }
 
     // === Context dropdown ===
     {
-        std::vector<int> contextIds;
-        std::vector<std::string> contextLabels;
+        std::vector<int> ids;
+        std::vector<std::string> labels;
         for (const auto& [id, label] : contextLookup) {
-            contextIds.push_back(id);
-            contextLabels.push_back(label);
+            ids.push_back(id);
+            labels.push_back(label);
         }
 
         int selectedIndex = 0;
         if (task_.context_id) {
-            auto it = std::find(contextIds.begin(), contextIds.end(), *task_.context_id);
-            if (it != contextIds.end()) {
-                selectedIndex = static_cast<int>(it - contextIds.begin());
-            }
+            auto it = std::find(ids.begin(), ids.end(), *task_.context_id);
+            if (it != ids.end()) selectedIndex = static_cast<int>(it - ids.begin());
         }
 
         if (ImGui::Combo("Context", &selectedIndex,
             [](void* data, int idx, const char** out_text) {
-                auto& labels = *static_cast<std::vector<std::string>*>(data);
-                if (idx >= 0 && idx < static_cast<int>(labels.size())) {
-                    *out_text = labels[idx].c_str();
-                    return true;
-                }
-                return false;
-            }, static_cast<void*>(&contextLabels), static_cast<int>(contextLabels.size()))) {
-            task_.context_id = contextIds[selectedIndex];
+                auto& v = *static_cast<std::vector<std::string>*>(data);
+                *out_text = v[idx].c_str(); return true;
+            }, static_cast<void*>(&labels), static_cast<int>(labels.size()))) {
+            task_.context_id = ids[selectedIndex];
             changed = true;
         }
     }
 
     // === Project dropdown ===
     {
-        std::vector<std::string> projectUUIDs;
-        std::vector<std::string> projectTitles;
+        std::vector<std::string> uuids;
+        std::vector<std::string> titles;
         for (const auto& [uuid, title] : projectLookup) {
-            projectUUIDs.push_back(uuid);
-            projectTitles.push_back(title);
+            uuids.push_back(uuid);
+            titles.push_back(title);
         }
 
         int selectedIndex = 0;
         if (task_.project_uuid) {
-            auto it = std::find(projectUUIDs.begin(), projectUUIDs.end(), *task_.project_uuid);
-            if (it != projectUUIDs.end()) {
-                selectedIndex = static_cast<int>(it - projectUUIDs.begin());
-            }
+            auto it = std::find(uuids.begin(), uuids.end(), *task_.project_uuid);
+            if (it != uuids.end()) selectedIndex = static_cast<int>(it - uuids.begin());
         }
 
         if (ImGui::Combo("Project", &selectedIndex,
             [](void* data, int idx, const char** out_text) {
-                auto& titles = *static_cast<std::vector<std::string>*>(data);
-                if (idx >= 0 && idx < static_cast<int>(titles.size())) {
-                    *out_text = titles[idx].c_str();
-                    return true;
-                }
-                return false;
-            }, static_cast<void*>(&projectTitles), static_cast<int>(projectTitles.size()))) {
-            task_.project_uuid = projectUUIDs[selectedIndex];
+                auto& v = *static_cast<std::vector<std::string>*>(data);
+                *out_text = v[idx].c_str(); return true;
+            }, static_cast<void*>(&titles), static_cast<int>(titles.size()))) {
+            task_.project_uuid = uuids[selectedIndex];
             changed = true;
         }
     }
 
     // === Topic dropdown ===
     {
-        std::vector<int> topicIds;
-        std::vector<std::string> topicLabels;
+        std::vector<int> ids;
+        std::vector<std::string> labels;
         for (const auto& [id, label] : topicLookup) {
-            topicIds.push_back(id);
-            topicLabels.push_back(label);
+            ids.push_back(id);
+            labels.push_back(label);
         }
 
         int selectedIndex = 0;
         if (task_.topic_id) {
-            auto it = std::find(topicIds.begin(), topicIds.end(), *task_.topic_id);
-            if (it != topicIds.end()) {
-                selectedIndex = static_cast<int>(it - topicIds.begin());
-            }
+            auto it = std::find(ids.begin(), ids.end(), *task_.topic_id);
+            if (it != ids.end()) selectedIndex = static_cast<int>(it - ids.begin());
         }
 
         if (ImGui::Combo("Topic", &selectedIndex,
             [](void* data, int idx, const char** out_text) {
-                auto& labels = *static_cast<std::vector<std::string>*>(data);
-                if (idx >= 0 && idx < static_cast<int>(labels.size())) {
-                    *out_text = labels[idx].c_str();
-                    return true;
-                }
-                return false;
-            }, static_cast<void*>(&topicLabels), static_cast<int>(topicLabels.size()))) {
-            task_.topic_id = topicIds[selectedIndex];
+                auto& v = *static_cast<std::vector<std::string>*>(data);
+                *out_text = v[idx].c_str(); return true;
+            }, static_cast<void*>(&labels), static_cast<int>(labels.size()))) {
+            task_.topic_id = ids[selectedIndex];
             changed = true;
         }
     }
 
     // === Delegate dropdown ===
     {
-        std::vector<int> delegateIds;
-        std::vector<std::string> delegateNames;
+        std::vector<int> ids;
+        std::vector<std::string> names;
         for (const auto& [id, name] : personLookup) {
-            delegateIds.push_back(id);
-            delegateNames.push_back(name);
+            ids.push_back(id);
+            names.push_back(name);
         }
 
         int selectedIndex = 0;
         if (task_.delegated_to) {
-            auto it = std::find(delegateIds.begin(), delegateIds.end(), *task_.delegated_to);
-            if (it != delegateIds.end()) {
-                selectedIndex = static_cast<int>(it - delegateIds.begin());
-            }
+            auto it = std::find(ids.begin(), ids.end(), *task_.delegated_to);
+            if (it != ids.end()) selectedIndex = static_cast<int>(it - ids.begin());
         }
 
         if (ImGui::Combo("Delegate", &selectedIndex,
             [](void* data, int idx, const char** out_text) {
-                auto& names = *static_cast<std::vector<std::string>*>(data);
-                if (idx >= 0 && idx < static_cast<int>(names.size())) {
-                    *out_text = names[idx].c_str();
-                    return true;
-                }
-                return false;
-            }, static_cast<void*>(&delegateNames), static_cast<int>(delegateNames.size()))) {
-            task_.delegated_to = delegateIds[selectedIndex];
+                auto& v = *static_cast<std::vector<std::string>*>(data);
+                *out_text = v[idx].c_str(); return true;
+            }, static_cast<void*>(&names), static_cast<int>(names.size()))) {
+            task_.delegated_to = ids[selectedIndex];
             changed = true;
         }
     }
@@ -225,12 +197,8 @@ void CardView::drawBack() {
         int selectedDb = task_.db_id;
         if (ImGui::Combo("Database", &selectedDb,
             [](void* data, int idx, const char** out_text) {
-                const auto& names = *static_cast<std::vector<std::string>*>(data);
-                if (idx >= 0 && idx < static_cast<int>(names.size())) {
-                    *out_text = names[idx].c_str();
-                    return true;
-                }
-                return false;
+                auto& v = *static_cast<std::vector<std::string>*>(data);
+                *out_text = v[idx].c_str(); return true;
             }, static_cast<void*>(&databaseNames), static_cast<int>(databaseNames.size()))) {
             if (selectedDb != task_.db_id) {
                 task_.db_id = selectedDb;

@@ -4,18 +4,18 @@
 #define CARD_VIEW_H
 
 #include <string>
-
 #include "core/task.h"
 
 class CardView {
 public:
     explicit CardView(Task& task);
 
-    void draw();  // Draws either front or back depending on flip state
+    // Draws the card, scaling size based on zoom factor
+    void draw(float zoom = 1.0f);
 
 private:
-    void drawFront();
-    void drawBack();
+    void drawFront(float zoom);
+    void drawBack(float zoom);
 
     Task& task_;
     bool is_flipped_ = false;

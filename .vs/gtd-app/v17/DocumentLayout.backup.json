@@ -3,88 +3,31 @@
   "WorkspaceRootPath": "Y:\\gtd-app\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|Y:\\gtd-app\\src\\core\\database.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\core\\database.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|Y:\\gtd-app\\src\\ui\\canvas_view.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\ui\\canvas_view.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|Y:\\gtd-app\\src\\core\\database.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\core\\database.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|Y:\\gtd-app\\src\\ui\\card_view.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\ui\\card_view.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|Y:\\gtd-app\\src\\core\\task.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\core\\task.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|Y:\\gtd-app\\src\\ui\\card_view.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\ui\\card_view.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|Y:\\gtd-app\\src\\ui\\card_view.cpp||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\ui\\card_view.cpp||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|Y:\\gtd-app\\src\\core\\task.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\core\\task.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|Y:\\gtd-app\\src\\core\\database_registry.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\core\\database_registry.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|Y:\\gtd-app\\src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|Y:\\gtd-app\\config\\table_map.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:config\\table_map.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|Y:\\gtd-app\\config\\database_config.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:config\\database_config.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|Y:\\gtd-app\\src\\ui\\canvas_view.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\ui\\canvas_view.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|Y:\\gtd-app\\src\\platform\\windows\\gui_win32.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\platform\\windows\\gui_win32.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|Y:\\gtd-app\\src\\platform\\windows\\gui_win32.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\platform\\windows\\gui_win32.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|Y:\\gtd-app\\src\\core\\lookup_maps.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\core\\lookup_maps.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|Y:\\gtd-app\\src\\core\\database_registry.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\core\\database_registry.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|Y:\\gtd-app\\src\\core\\lookup_maps.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\core\\lookup_maps.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|Y:\\gtd-app\\src\\ui\\lookup_maps.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\ui\\lookup_maps.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|Y:\\gtd-app\\CMakeLists.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CMakeLists.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|Y:\\gtd-app\\.gitignore||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.gitignore||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|Y:\\gtd-app\\src\\core\\config.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\core\\config.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|Y:\\gtd-app\\config\\db_config.json||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:config\\db_config.json||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|Y:\\gtd-app\\src\\ui\\lookup_maps.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\ui\\lookup_maps.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|Y:\\gtd-app\\src\\ui\\card_view.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\ui\\card_view.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|CMake Overview Pages||{B1CAA5B0-FEB1-4350-8AB9-F895876842F2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -94,280 +37,94 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "main.cpp",
-              "DocumentMoniker": "Y:\\gtd-app\\src\\main.cpp",
-              "RelativeDocumentMoniker": "src\\main.cpp",
-              "ToolTip": "Y:\\gtd-app\\src\\main.cpp",
-              "RelativeToolTip": "src\\main.cpp",
-              "ViewState": "AgIAABoAAADAmZmZmZkuwA4AAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-07-11T20:21:30.025Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "database.cpp",
-              "DocumentMoniker": "Y:\\gtd-app\\src\\core\\database.cpp",
-              "RelativeDocumentMoniker": "src\\core\\database.cpp",
-              "ToolTip": "Y:\\gtd-app\\src\\core\\database.cpp",
-              "RelativeToolTip": "src\\core\\database.cpp",
-              "ViewState": "AgIAAFABAADAW2ZmZuYswGsBAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-07-11T20:28:01.001Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "database_registry.cpp",
-              "DocumentMoniker": "Y:\\gtd-app\\src\\core\\database_registry.cpp",
-              "RelativeDocumentMoniker": "src\\core\\database_registry.cpp",
-              "ToolTip": "Y:\\gtd-app\\src\\core\\database_registry.cpp",
-              "RelativeToolTip": "src\\core\\database_registry.cpp",
-              "ViewState": "AgIAAEIAAAAwAQAAAIApwEkAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-26T05:39:49.648Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "lookup_maps.cpp",
-              "DocumentMoniker": "Y:\\gtd-app\\src\\core\\lookup_maps.cpp",
-              "RelativeDocumentMoniker": "src\\core\\lookup_maps.cpp",
-              "ToolTip": "Y:\\gtd-app\\src\\core\\lookup_maps.cpp",
-              "RelativeToolTip": "src\\core\\lookup_maps.cpp",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAuwGgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-30T10:06:34.544Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "task.cpp",
-              "DocumentMoniker": "Y:\\gtd-app\\src\\core\\task.cpp",
-              "RelativeDocumentMoniker": "src\\core\\task.cpp",
-              "ToolTip": "Y:\\gtd-app\\src\\core\\task.cpp",
-              "RelativeToolTip": "src\\core\\task.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-17T13:51:27.358Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "task.h",
-              "DocumentMoniker": "Y:\\gtd-app\\src\\core\\task.h",
-              "RelativeDocumentMoniker": "src\\core\\task.h",
-              "ToolTip": "Y:\\gtd-app\\src\\core\\task.h",
-              "RelativeToolTip": "src\\core\\task.h",
-              "ViewState": "AgIAAAcAAABAmpmZmZkgwBwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-08-17T13:25:03.93Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "table_map.json",
-              "DocumentMoniker": "Y:\\gtd-app\\config\\table_map.json",
-              "RelativeDocumentMoniker": "config\\table_map.json",
-              "ToolTip": "Y:\\gtd-app\\config\\table_map.json",
-              "RelativeToolTip": "config\\table_map.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-08-29T14:02:56.399Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "card_view.cpp",
-              "DocumentMoniker": "Y:\\gtd-app\\src\\ui\\card_view.cpp",
-              "RelativeDocumentMoniker": "src\\ui\\card_view.cpp",
-              "ToolTip": "Y:\\gtd-app\\src\\ui\\card_view.cpp",
-              "RelativeToolTip": "src\\ui\\card_view.cpp",
-              "ViewState": "AgIAAOoAAAAAAAAAAAAgwAkBAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-07-14T16:43:50.163Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "database.h",
-              "DocumentMoniker": "Y:\\gtd-app\\src\\core\\database.h",
-              "RelativeDocumentMoniker": "src\\core\\database.h",
-              "ToolTip": "Y:\\gtd-app\\src\\core\\database.h",
-              "RelativeToolTip": "src\\core\\database.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-08-17T13:40:38.99Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "database_config.json",
-              "DocumentMoniker": "Y:\\gtd-app\\config\\database_config.json",
-              "RelativeDocumentMoniker": "config\\database_config.json",
-              "ToolTip": "Y:\\gtd-app\\config\\database_config.json",
-              "RelativeToolTip": "config\\database_config.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-08-29T14:48:32.038Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "gui_win32.h",
-              "DocumentMoniker": "Y:\\gtd-app\\src\\platform\\windows\\gui_win32.h",
-              "RelativeDocumentMoniker": "src\\platform\\windows\\gui_win32.h",
-              "ToolTip": "Y:\\gtd-app\\src\\platform\\windows\\gui_win32.h",
-              "RelativeToolTip": "src\\platform\\windows\\gui_win32.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-08-17T13:37:58.861Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "gui_win32.cpp",
-              "DocumentMoniker": "Y:\\gtd-app\\src\\platform\\windows\\gui_win32.cpp",
-              "RelativeDocumentMoniker": "src\\platform\\windows\\gui_win32.cpp",
-              "ToolTip": "Y:\\gtd-app\\src\\platform\\windows\\gui_win32.cpp",
-              "RelativeToolTip": "src\\platform\\windows\\gui_win32.cpp",
-              "ViewState": "AgIAAF4AAADAmZmZmRknwGwAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-07-11T20:53:34.909Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "database_registry.h",
-              "DocumentMoniker": "Y:\\gtd-app\\src\\core\\database_registry.h",
-              "RelativeDocumentMoniker": "src\\core\\database_registry.h",
-              "ToolTip": "Y:\\gtd-app\\src\\core\\database_registry.h",
-              "RelativeToolTip": "src\\core\\database_registry.h",
-              "ViewState": "AgIAABYAAAAAAAAAAAAwwCcAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-08-26T05:38:43.3Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "lookup_maps.h",
-              "DocumentMoniker": "Y:\\gtd-app\\src\\core\\lookup_maps.h",
-              "RelativeDocumentMoniker": "src\\core\\lookup_maps.h",
-              "ToolTip": "Y:\\gtd-app\\src\\core\\lookup_maps.h",
-              "RelativeToolTip": "src\\core\\lookup_maps.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-08-30T10:06:03.421Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "db_config.json",
-              "DocumentMoniker": "Y:\\gtd-app\\config\\db_config.json",
-              "RelativeDocumentMoniker": "config\\db_config.json",
-              "ToolTip": "Y:\\gtd-app\\config\\db_config.json",
-              "RelativeToolTip": "config\\db_config.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-08-29T14:02:21.799Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "lookup_maps.h",
-              "DocumentMoniker": "Y:\\gtd-app\\src\\ui\\lookup_maps.h",
-              "RelativeDocumentMoniker": "src\\ui\\lookup_maps.h",
-              "ToolTip": "Y:\\gtd-app\\src\\ui\\lookup_maps.h",
-              "RelativeToolTip": "src\\ui\\lookup_maps.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-08-25T17:52:27.881Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "CMakeLists.txt",
-              "DocumentMoniker": "Y:\\gtd-app\\CMakeLists.txt",
-              "RelativeDocumentMoniker": "CMakeLists.txt",
-              "ToolTip": "Y:\\gtd-app\\CMakeLists.txt",
-              "RelativeToolTip": "CMakeLists.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-07-11T20:22:51.684Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": ".gitignore",
-              "DocumentMoniker": "Y:\\gtd-app\\.gitignore",
-              "RelativeDocumentMoniker": ".gitignore",
-              "ToolTip": "Y:\\gtd-app\\.gitignore",
-              "RelativeToolTip": ".gitignore",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-08-30T09:34:56.232Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "config.h",
-              "DocumentMoniker": "Y:\\gtd-app\\src\\core\\config.h",
-              "RelativeDocumentMoniker": "src\\core\\config.h",
-              "ToolTip": "Y:\\gtd-app\\src\\core\\config.h",
-              "RelativeToolTip": "src\\core\\config.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-07-11T20:45:15.645Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "lookup_maps.cpp",
-              "DocumentMoniker": "Y:\\gtd-app\\src\\ui\\lookup_maps.cpp",
-              "RelativeDocumentMoniker": "src\\ui\\lookup_maps.cpp",
-              "ToolTip": "Y:\\gtd-app\\src\\ui\\lookup_maps.cpp",
-              "RelativeToolTip": "src\\ui\\lookup_maps.cpp",
-              "ViewState": "AgIAADIAAAAAaWZmZmYEwCYAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-25T17:53:08.949Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
               "Title": "card_view.h",
               "DocumentMoniker": "Y:\\gtd-app\\src\\ui\\card_view.h",
               "RelativeDocumentMoniker": "src\\ui\\card_view.h",
               "ToolTip": "Y:\\gtd-app\\src\\ui\\card_view.h",
               "RelativeToolTip": "src\\ui\\card_view.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-07-14T16:44:18.427Z",
+              "WhenOpened": "2025-09-03T10:15:49.985Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "card_view.cpp",
+              "DocumentMoniker": "Y:\\gtd-app\\src\\ui\\card_view.cpp",
+              "RelativeDocumentMoniker": "src\\ui\\card_view.cpp",
+              "ToolTip": "Y:\\gtd-app\\src\\ui\\card_view.cpp",
+              "RelativeToolTip": "src\\ui\\card_view.cpp",
+              "ViewState": "AgIAANAAAAAAAAAAAAAAAOkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-03T05:40:43.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "gui_win32.cpp",
+              "DocumentMoniker": "Y:\\gtd-app\\src\\platform\\windows\\gui_win32.cpp",
+              "RelativeDocumentMoniker": "src\\platform\\windows\\gui_win32.cpp",
+              "ToolTip": "Y:\\gtd-app\\src\\platform\\windows\\gui_win32.cpp",
+              "RelativeToolTip": "src\\platform\\windows\\gui_win32.cpp",
+              "ViewState": "AgIAAFIAAAAAZ2ZmZqYlwGUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-03T05:35:57.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "canvas_view.cpp",
+              "DocumentMoniker": "Y:\\gtd-app\\src\\ui\\canvas_view.cpp",
+              "RelativeDocumentMoniker": "src\\ui\\canvas_view.cpp",
+              "ToolTip": "Y:\\gtd-app\\src\\ui\\canvas_view.cpp",
+              "RelativeToolTip": "src\\ui\\canvas_view.cpp",
+              "ViewState": "AgIAACsAAAAAAAAAAAAcwEYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-03T05:34:33.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "canvas_view.h",
+              "DocumentMoniker": "Y:\\gtd-app\\src\\ui\\canvas_view.h",
+              "RelativeDocumentMoniker": "src\\ui\\canvas_view.h",
+              "ToolTip": "Y:\\gtd-app\\src\\ui\\canvas_view.h",
+              "RelativeToolTip": "src\\ui\\canvas_view.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-09-03T05:32:46.901Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "lookup_maps.cpp",
+              "DocumentMoniker": "Y:\\gtd-app\\src\\ui\\lookup_maps.cpp",
+              "RelativeDocumentMoniker": "src\\ui\\lookup_maps.cpp",
+              "ToolTip": "Y:\\gtd-app\\src\\ui\\lookup_maps.cpp",
+              "RelativeToolTip": "src\\ui\\lookup_maps.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-03T05:24:34.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CMake Overview Pages",
+              "DocumentMoniker": "CMake Overview Pages",
+              "ToolTip": "CMake Overview Pages",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-08-31T12:55:51.501Z",
               "EditorCaption": ""
             }
           ]

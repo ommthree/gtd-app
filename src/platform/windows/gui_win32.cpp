@@ -8,7 +8,9 @@
 #include <tchar.h>
 #include <vector>
 #include "lookup_maps.h"
+#include "canvas_view.h"
 
+static CanvasView g_canvasView;
 extern LRESULT ImGui_ImplWin32_WndProcHandler(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam);
 
 // DirectX Globals
@@ -85,24 +87,17 @@ LRESULT WINAPI WndProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam) {
     }
 }
 
-void render_main_window(const std::vector<Task>& tasks) {
-    static std::vector<CardView> cardViews;
-    static bool initialized = false;
 
+
+void render_main_window(std::vector<Task>& tasks) {
+    static bool initialized = false;
     if (!initialized) {
-        for (const Task& t : tasks) {
-            cardViews.emplace_back(const_cast<Task&>(t));  // CardView expects a non-const reference
-        }
+        g_canvasView.setTasks(tasks);  // Wraps tasks in CardViews
         initialized = true;
     }
 
     ImGui::Begin("GTD Task Board");
-
-    for (CardView& card : cardViews) {
-        card.draw();
-        ImGui::Separator();  // Visual divider between cards
-    }
-
+    g_canvasView.render();  // Handles zoom/pan, layout, and card drawing
     ImGui::End();
 }
 

@@ -33,7 +33,7 @@ set(MAIN_SRC
 )
 
 # --- Add SQLite3 ---
-add_library(sqlite3 STATIC third_party/sqlite/sqlite3.c)
+add_library(sqlite3 STATIC third_party/sqlite/sqlite3.c "src/ui/canvas_view.h")
 target_include_directories(sqlite3 PUBLIC third_party/sqlite)
 
 # --- Define Executable ---
@@ -42,7 +42,7 @@ add_executable(GTDApp
     ${CORE_SRC}
     ${PLATFORM_SRC}
     ${IMGUI_SRC}
-)
+ "src/ui/canvas_view.h")
 
 # --- Include Directories ---
 target_include_directories(GTDApp PRIVATE

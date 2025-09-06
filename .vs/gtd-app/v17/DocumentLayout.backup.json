@@ -7,16 +7,16 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\ui\\canvas_view.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|Y:\\gtd-app\\src\\ui\\card_view.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\ui\\card_view.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|Y:\\gtd-app\\src\\ui\\card_view.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\ui\\card_view.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|Y:\\gtd-app\\src\\ui\\canvas_view.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\ui\\canvas_view.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|Y:\\gtd-app\\src\\ui\\task_filter_criteria.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\ui\\task_filter_criteria.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|Y:\\gtd-app\\src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|Y:\\gtd-app\\src\\platform\\windows\\gui_win32.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -37,32 +37,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "card_view.h",
-              "DocumentMoniker": "Y:\\gtd-app\\src\\ui\\card_view.h",
-              "RelativeDocumentMoniker": "src\\ui\\card_view.h",
-              "ToolTip": "Y:\\gtd-app\\src\\ui\\card_view.h",
-              "RelativeToolTip": "src\\ui\\card_view.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-09-03T10:15:49.985Z",
+              "DocumentIndex": 3,
+              "Title": "main.cpp",
+              "DocumentMoniker": "Y:\\gtd-app\\src\\main.cpp",
+              "RelativeDocumentMoniker": "src\\main.cpp",
+              "ToolTip": "Y:\\gtd-app\\src\\main.cpp",
+              "RelativeToolTip": "src\\main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-06T08:17:33.731Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "card_view.cpp",
-              "DocumentMoniker": "Y:\\gtd-app\\src\\ui\\card_view.cpp",
-              "RelativeDocumentMoniker": "src\\ui\\card_view.cpp",
-              "ToolTip": "Y:\\gtd-app\\src\\ui\\card_view.cpp",
-              "RelativeToolTip": "src\\ui\\card_view.cpp",
-              "ViewState": "AgIAANAAAAAAAAAAAAAAAOkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-09-03T05:40:43.827Z",
+              "DocumentIndex": 2,
+              "Title": "task_filter_criteria.h",
+              "DocumentMoniker": "Y:\\gtd-app\\src\\ui\\task_filter_criteria.h",
+              "RelativeDocumentMoniker": "src\\ui\\task_filter_criteria.h",
+              "ToolTip": "Y:\\gtd-app\\src\\ui\\task_filter_criteria.h",
+              "RelativeToolTip": "src\\ui\\task_filter_criteria.h",
+              "ViewState": "AgIAABwAAAAAAAAAAAAAADUAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-09-04T05:41:30.427Z",
               "EditorCaption": ""
             },
             {
@@ -75,8 +79,7 @@
               "RelativeToolTip": "src\\platform\\windows\\gui_win32.cpp",
               "ViewState": "AgIAAFIAAAAAZ2ZmZqYlwGUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-09-03T05:35:57.345Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-03T05:35:57.345Z"
             },
             {
               "$type": "Document",
@@ -86,20 +89,20 @@
               "RelativeDocumentMoniker": "src\\ui\\canvas_view.cpp",
               "ToolTip": "Y:\\gtd-app\\src\\ui\\canvas_view.cpp",
               "RelativeToolTip": "src\\ui\\canvas_view.cpp",
-              "ViewState": "AgIAACsAAAAAAAAAAAAcwEYAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAmwIMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-09-03T05:34:33.242Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "canvas_view.h",
               "DocumentMoniker": "Y:\\gtd-app\\src\\ui\\canvas_view.h",
               "RelativeDocumentMoniker": "src\\ui\\canvas_view.h",
               "ToolTip": "Y:\\gtd-app\\src\\ui\\canvas_view.h",
               "RelativeToolTip": "src\\ui\\canvas_view.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-09-03T05:32:46.901Z",
               "EditorCaption": ""
@@ -114,8 +117,7 @@
               "RelativeToolTip": "src\\ui\\lookup_maps.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-09-03T05:24:34.266Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-03T05:24:34.266Z"
             },
             {
               "$type": "Document",
@@ -124,8 +126,7 @@
               "DocumentMoniker": "CMake Overview Pages",
               "ToolTip": "CMake Overview Pages",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-08-31T12:55:51.501Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-31T12:55:51.501Z"
             }
           ]
         }
